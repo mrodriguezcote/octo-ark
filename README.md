@@ -10,6 +10,10 @@ Acceptance testing with cucumber and selenium grid
 
 ### Selenium grid
 
-From root run `docker-compose up -d`
+`docker-compose up -d`
 
 Check [grid status](http://localhost:4444/grid/console)
+
+To scale Firefox up/down `docker-compose scale firefoxnode=[x]`
+
+To scale Chrome up/down `docker-compose scale chromenode=[x]`
