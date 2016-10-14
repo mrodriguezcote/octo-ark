@@ -1,2 +1,2 @@
 # octo-ark
-dockerized selenium grid
+Acceptance testing with cucumber and selenium grid 
