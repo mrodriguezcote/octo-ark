@@ -19,14 +19,10 @@ RUN apt-get update && apt-get install -y \
   curl -L https://npmjs.org/install.sh | sh
 
 # copy in application
-COPY /src /octo-ark
-WORKDIR /octo-ark
+COPY /src /src
+WORKDIR /src
 RUN npm install
 
 # set container runtime
 ENV \
-  DEBUG="nightmare"
-
-COPY /docker-entrypoint.sh /entrypoint
-ENTRYPOINT ["/entrypoint"]
-CMD ["suite:yahoo-search-example.js"]
+CMD ["./node_modules/.bin/cucumber.js"]
