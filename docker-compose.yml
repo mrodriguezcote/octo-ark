@@ -16,3 +16,10 @@ chromenode:
     - 5900
   links:
     - seleniumhub:hub
+
+cucumber:
+  build: .
+  ports:
+    - 6000
+  links:
+    - seleniumhub:hub
