@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM node:4-onbuild
 
 RUN apt-get update && apt-get install -y \
   libasound2 \
@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get update && apt-get install -y \
-  nodejs \
   && rm -rf /var/lib/apt/lists/* && \
   echo "updating npm ...." && \
   curl -L https://npmjs.org/install.sh | sh
