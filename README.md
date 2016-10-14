@@ -1,14 +1,7 @@
 # octo-ark
 Acceptance testing with cucumber and selenium grid 
 
-### Cucumber
-
-`docker build -t cucumber .`
-
-`docker run -it --rm cucumber`
- 
-
-### Selenium grid
+### Usage
 
 `docker-compose up -d`
 
