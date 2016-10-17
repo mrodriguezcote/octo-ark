@@ -1,13 +1,13 @@
 # octo-ark
-Acceptance testing with cucumber and selenium grid 
+Acceptance testing with cucumber and selenium 
 
 ## Usage
 
-### Run standalone selenium with Firefox
+### run standalone selenium with Firefox
 
 `docker-compose up`
 
-### Run selenium grid
+### run selenium grid
 
 `docker-compose --file=docker-compose.grid.yml up`
 
