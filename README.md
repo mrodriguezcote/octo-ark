@@ -3,7 +3,7 @@ Acceptance testing with cucumber and selenium
 
 ## Usage
 
-### run standalone selenium with Firefox
+### run standalone selenium with Chrome
 
 `docker-compose up`
 
