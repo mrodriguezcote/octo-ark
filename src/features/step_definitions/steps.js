@@ -1,5 +1,5 @@
 module.exports = function () {
-  this.Given(/^I am on the Cucumber.js GitHub repository$/, function(done) {
+  this.Given(/^I am on the author GitHub page$/, function(done) {
     browser
       .url('https://github.com/mrodriguezcote')
       .call(done);
@@ -11,7 +11,7 @@ module.exports = function () {
       .call(done);
   });
 
-  this.Then(/^I should see "([^"]*)"$/, function (text, done) {
+  this.Then(/^I should see the project page$/, function (done) {
     browser
       .getUrl().then(function(url) {
           expect(url).to.equal("https://github.com/mrodriguezcote/octo-arkx");

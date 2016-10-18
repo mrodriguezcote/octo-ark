@@ -1,9 +1,9 @@
 Feature: Example feature
-  As a user of Cucumber.js
-  I want to have documentation on Cucumber
-  So that I can concentrate on building awesome applications
+  As a user of octo-ark
+  I want to have access to the project repo
+  So that I can read the documentation
 
   Scenario: Reading documentation
-    Given I am on the Cucumber.js GitHub repository
-    When I click on "CLI"
-    Then I should see "Running specific features"
+    Given I am on the author GitHub page
+    When I click on "octo-ark"
+    Then I should see the project page
