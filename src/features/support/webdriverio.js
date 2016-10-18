@@ -8,7 +8,7 @@ let browser = WebDriverIO.remote({
   // port: 4444,
   //For dockerized selenium on node-q:
   host: '172.17.0.2',
-  port: 3000,
+  port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',
   desiredCapabilities: {
