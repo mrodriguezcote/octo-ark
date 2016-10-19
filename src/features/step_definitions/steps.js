@@ -31,7 +31,7 @@ module.exports = function () {
       .call(done);
   });
 
-  this.Then(/^I should see reach the careers page$/, function (done) {
+  this.Then(/^I should reach the careers page$/, function (done) {
     browser
       .getUrl().then(function(url) {
           expect(url).to.equal('http://yeti.qa-2.blueacorn.net/careers');

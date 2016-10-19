@@ -6,4 +6,4 @@ Feature: YETI Homepage
   Scenario: Reaching the Careers page
     Given I am on the YETI homepage
     When I click on the Careers link
-    Then I should see reach the careers page
+    Then I should reach the careers page
