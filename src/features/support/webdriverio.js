@@ -6,7 +6,7 @@ let browser = WebDriverIO.remote({
   //For local selenium:
   //host: 'localhost',
   //For dockerized selenium on node-q:
-  host: '172.17.0.2',
+  host: '172.17.0.51',
   port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',
