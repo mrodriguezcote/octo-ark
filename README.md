@@ -5,7 +5,11 @@ Acceptance testing with cucumber and selenium
 
 ### run standalone selenium with Chrome
 
-`docker-compose up`
+Set docker environment to node-q
+
+`eval $(docker-machine env node-q)`
+
+Then `docker-compose up`
 
 ### run selenium grid
 
