@@ -3,10 +3,7 @@
 let WebDriverIO = require('webdriverio');
 let browser = WebDriverIO.remote({
   baseUrl: 'https://google.com',
-  //For local selenium:
-  //host: 'localhost',
-  //For dockerized selenium on node-q:
-  host: '172.17.0.22',
+  host: 'selenium-chrome',
   port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',

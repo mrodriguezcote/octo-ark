@@ -5,6 +5,5 @@ Feature: Example feature
 
   Scenario: Reading documentation
     Given This step should pass
-    When This step should pass again
     When This step should also pass
     Then This step should fail
