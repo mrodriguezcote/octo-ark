@@ -8,4 +8,4 @@ WORKDIR /src
 RUN npm install
 
 ENV \
-CMD ["./node_modules/.bin/cucumber.js"]
+CMD ["./node_modules/.bin/cucumber.js --format <json[:/src/]>"]
