@@ -35,20 +35,20 @@ jsonPWrapper ({
             ],
             "Tags": [],
             "Result": {
-              "WasExecuted": false,
-              "WasSuccessful": false
+              "WasExecuted": true,
+              "WasSuccessful": true
             }
           }
         ],
         "Result": {
-          "WasExecuted": false,
-          "WasSuccessful": false
+          "WasExecuted": true,
+          "WasSuccessful": true
         },
         "Tags": []
       },
       "Result": {
-        "WasExecuted": false,
-        "WasSuccessful": false
+        "WasExecuted": true,
+        "WasSuccessful": true
       }
     },
     {
@@ -123,9 +123,9 @@ jsonPWrapper ({
       {
         "Folder": "sample.feature",
         "Total": 1,
-        "Passing": 0,
+        "Passing": 1,
         "Failing": 0,
-        "Inconclusive": 1
+        "Inconclusive": 0
       },
       {
         "Folder": "checkout.feature",
@@ -153,18 +153,18 @@ jsonPWrapper ({
     ],
     "Scenarios": {
       "Total": 2,
-      "Passing": 0,
+      "Passing": 1,
       "Failing": 0,
-      "Inconclusive": 2
+      "Inconclusive": 1
     },
     "Features": {
       "Total": 2,
-      "Passing": 0,
+      "Passing": 1,
       "Failing": 0,
-      "Inconclusive": 2
+      "Inconclusive": 1
     }
   },
   "Configuration": {
-    "GeneratedOn": "27 October 2016 18:33:08"
+    "GeneratedOn": "27 October 2016 19:34:04"
   }
 });
