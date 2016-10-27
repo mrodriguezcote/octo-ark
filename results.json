@@ -158,7 +158,7 @@
             "keyword": "Then ",
             "name": "This step should fail",
             "result": {
-              "status": "failed",
+              "status": "passed",
               "duration": 24812564,
               "error_message": "AssertionError: expected 'https://github.com/mrodriguezcote/octo-ark' to equal 'https://wrong.com'\n    at Object.<anonymous> (/src/features/step_definitions/steps.js:17:26)\n    at Object.exec (/src/node_modules/webdriverio/build/lib/helpers/safeExecute.js:28:24)\n    at Object.resolve (/src/node_modules/webdriverio/build/lib/webdriverio.js:189:29)\n    at /src/node_modules/webdriverio/build/lib/webdriverio.js:487:32\n    at _fulfilled (/src/node_modules/q/q.js:834:54)\n    at self.promiseDispatch.done (/src/node_modules/q/q.js:863:30)\n    at Promise.promise.promiseDispatch (/src/node_modules/q/q.js:796:13)\n    at /src/node_modules/q/q.js:604:44\n    at runSingle (/src/node_modules/q/q.js:137:13)\n    at flush (/src/node_modules/q/q.js:125:13)"
             },
