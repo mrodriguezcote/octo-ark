@@ -27,8 +27,6 @@
 *.css.map
 *.com
 *.class
-*.dll
-*.exe
 *.o
 *.so
 
