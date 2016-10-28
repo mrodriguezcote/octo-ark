@@ -6,3 +6,6 @@ RUN echo "updating npm ...." && \
 COPY /src /src
 WORKDIR /src
 RUN npm install
+
+ENV \
+CMD ["./node_modules/.bin/cucumber.js --format <json[:/src/]>"]
