@@ -11,5 +11,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-COPY / /src
+COPY /src /src
 WORKDIR /src
+
+CMD mono pickles/pickles.exe -f features -o web -lr results.json -trfmt cucumberjson -df DHTML
