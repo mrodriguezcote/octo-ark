@@ -13,7 +13,7 @@ Set docker environment to node-q
 
 `docker-compose up` Starts the selenium and cucumber containers, results are stored in the cucumber container
 
-#### 2) Retrieve the restults
+#### 2) Retrieve the results
 
 `docker cp cucumber:src/features/results.json src/` Copies results.json out to your host
 
