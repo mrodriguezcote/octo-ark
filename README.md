@@ -27,4 +27,4 @@ Set docker environment to node-q
 
 ## Results
 
-On a browser: file://path-to-octo-ark/src/web/Index.html
+On a browser: file://*path-to-octo-ark*/src/web/Index.html
