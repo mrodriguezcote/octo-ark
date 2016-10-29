@@ -7,16 +7,26 @@ Set docker environment to node-q
 
 `eval $(docker-machine env node-q)`
 
-### run standalone selenium with Chrome
+### run tests on standalone selenium with Chrome
+
+#### 1) Execute the tests
 
 `docker-compose up`
 
-### run selenium grid
+Starts the selenium and cucumber containers, results are stored in the cucumber container
 
-`docker-compose --file=docker-compose.grid.yml up`
+#### 2) Retrieve the restults
 
-Check [grid status](http://172.16.0.6:4444/grid/console)
+`docker cp cucumber:src/features/results.json src/`
 
-To scale Firefox up/down `docker-compose scale firefoxnode=[x]`
+Copies results.json out to your host
 
-To scale Chrome up/down `docker-compose scale chromenode=[x]`
+#### 3) Build mono and run pickles
+
+`docker-compose --file=docker-compose.results.yml up`
+
+Builds an image with the mono runtime to execute pickles
+
+#### 4) Retrieve the web files
+
+`docker cp pickles:src/web ./src`
