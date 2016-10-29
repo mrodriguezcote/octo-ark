@@ -25,6 +25,13 @@ Set docker environment to node-q
 
 `docker cp pickles:src/web ./src` Puts the pickles site files on your host
 
-## Results
+### results
 
 On a browser: file://*path-to-octo-ark*/src/web/Index.html
+
+### cleanup
+
+`docker-compose down`
+
+`docker-compose --file=docker-compose.pckles.yml down`
+
