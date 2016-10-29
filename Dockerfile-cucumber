@@ -5,4 +5,5 @@ RUN echo "updating npm ...." && \
 COPY /src /src
 WORKDIR /src
 RUN npm install
+
 CMD ["npm", "start"]
