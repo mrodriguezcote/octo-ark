@@ -19,7 +19,7 @@ Set docker environment to node-q
 
 ##### 3. Build mono and run pickles
 
-`docker-compose --file=docker-compose.pckles.yml up` Builds an image with the mono runtime to execute pickles
+`docker-compose --file=docker-compose.pickles.yml up` Builds an image with the mono runtime to execute pickles
 
 ##### 4. Retrieve the web files
 
@@ -33,5 +33,5 @@ On a browser: file://*path-to-octo-ark*/src/web/Index.html
 
 `docker-compose down`
 
-`docker-compose --file=docker-compose.pckles.yml down`
+`docker-compose --file=docker-compose.pickles.yml down`
 
