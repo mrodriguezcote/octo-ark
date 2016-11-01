@@ -12,3 +12,14 @@ cucumber:
     - 6000
   links:
     - selenium
+  volumes:
+    - /results
+
+pickles:
+  container_name: pickles
+  build: .
+  dockerfile: Dockerfile-pickles
+  ports:
+    - 4000
+  volumes_from:
+    - "cucumber"
