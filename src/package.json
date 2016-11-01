@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "./node_modules/.bin/cucumber.js --format json:./features/results.json",
+    "start": "./node_modules/.bin/cucumber.js --format json:/results/results.json ; touch /results/.complete",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marco Rodriguez @ Blue Acorn",

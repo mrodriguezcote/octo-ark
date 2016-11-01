@@ -12,6 +12,10 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 COPY /src /src
+COPY pickles/ /src/pickles/
 WORKDIR /src
 
-CMD mono pickles/pickles.exe -f features -o web -lr results.json -trfmt cucumberjson -df DHTML
+COPY pickles-entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["delayed-pickles"]
