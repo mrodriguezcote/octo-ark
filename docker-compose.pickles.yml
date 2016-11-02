@@ -1,6 +1,0 @@
-pickles:
-  container_name: pickles
-  build: .
-  dockerfile: Dockerfile-pickles
-  ports:
-    - 4000
