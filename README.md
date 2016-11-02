@@ -22,7 +22,6 @@ On a browser: file://*path-to-octo-ark*/src/web/Index.html
 
 `docker-compose down`
 
-`docker-compose --file=docker-compose.pickles.yml down`
 
 
 ## Development
