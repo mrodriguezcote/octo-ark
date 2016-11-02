@@ -7,9 +7,7 @@ Acceptance testing with cucumber and selenium
 
 ##### 1. Execute the tests
 
-`docker-compose up` 
-
-Starts the selenium, cucumber, and pickles containers; pickles waits until results are written to generate the website files
+`docker-compose up` Starts selenium, cucumber, and pickles containers
 
 ##### 2. Retrieve the web files
 
