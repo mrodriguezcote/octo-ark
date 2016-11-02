@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:6
 RUN echo "updating npm ...." && \
   curl -L https://npmjs.org/install.sh | sh
 
