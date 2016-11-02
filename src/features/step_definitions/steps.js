@@ -11,10 +11,18 @@ module.exports = function () {
       .call(done);
   });
 
-  this.Then(/^This step should fail$/, function (done) {
+  this.Then(/^This final step should pass$/, function (done) {
     browser
       .getUrl().then(function(url) {
-          expect(url).to.equal("https://wrong.com");
+          expect(url).to.equal('https://github.com/mrodriguezcote/octo-ark');
+      })
+      .call(done);
+  });
+
+  this.Then(/^This final step should fail$/, function (done) {
+    browser
+      .getUrl().then(function(url) {
+          expect(url).to.equal('https://wrong.com');
       })
       .call(done);
   });
