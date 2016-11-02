@@ -1,5 +1,5 @@
 module.exports = function () {
-  this.Given(/^This step should pass$/, function(done) {
+  this.Given(/^This step should pass$/, {timeout: 10 * 1000}, function(done) {
     browser
       .url('https://github.com/mrodriguezcote')
       .call(done);
