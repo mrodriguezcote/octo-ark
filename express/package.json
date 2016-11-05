@@ -4,11 +4,12 @@
   "description": "express server",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "node-cmd": "^1.1.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "./node_modules/.bin/cucumber.js --format json:/results/results.json ; touch /results/.complete",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marco Rodriguez @ Blue Acorn",
