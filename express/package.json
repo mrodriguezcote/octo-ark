@@ -1,0 +1,17 @@
+{
+  "name": "octo-ark",
+  "version": "1.0.0",
+  "description": "express server",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/cucumber.js --format json:/results/results.json ; touch /results/.complete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Rodriguez @ Blue Acorn",
+  "license": "MIT",
+  "homepage": "https://github.com/mrodriguezcote/octo-ark#readme"
+}
