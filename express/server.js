@@ -1,9 +1,16 @@
 var express = require('express')
 var server = express()
+var cmd = require('node-cmd')
 
 server.post('/payload', function (req, res) {
   res.send('Payload received');
-  console.log("PAYLOAD RECEIVED");
+  cmd.get(
+      `
+          cd ../
+          docker-compose up
+          docker cp pickles:src/web ./src
+      `
+  );
 })
 
 server.listen(8000, function () {
