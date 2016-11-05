@@ -13,6 +13,17 @@ server.post('/payload', function (req, res) {
   );
 })
 
+server.get('/results', function (req, res) {
+  cmd.get(
+      `
+          docker logs cucumber
+      `,
+      function(data) {
+      		res.send(data);
+      }
+  );
+})
+
 server.get('/teardown', function (req, res) {
   res.send('Stopping and removing containers');
   cmd.get(
