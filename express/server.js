@@ -1,6 +1,8 @@
 var express = require('express')
 var server = express()
 var cmd = require('node-cmd')
+var ngrok = require('ngrok')
+var _ = require('lodash')
 
 server.post('/payload', function (req, res) {
   res.send('Payload received');
@@ -34,5 +36,8 @@ server.get('/teardown', function (req, res) {
 })
 
 server.listen(8000, function () {
-  console.log('Build Test Server listening on port 8000')
+	ngrok.connect(8000, function (err, url) {
+		console.log('Build Test Server listening on port 8000')
+		console.log('ngrok tunnel --- '+url);
+	});
 })
