@@ -292,4 +292,15 @@ h3.header {
     line-height: 32px;
 }
 
-
+/*Blue Acorn Theme*/
+.navbar-inverse .navbar-inner{
+    display: block;
+    background: #0077c6;
+    border-color: #0077c6;
+}
+.navbar-inverse .brand, .navbar-inverse .nav>li>a{
+    color: #FFFFFF;
+}
+.navbar-below{
+    display: none;
+}
