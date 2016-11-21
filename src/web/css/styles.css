@@ -302,5 +302,17 @@ h3.header {
     color: #FFFFFF;
 }
 .navbar-below{
+    width: 70px;
+}
+    .navbar-below div:first-child{
+        display: none;
+    }
+#FolderNav{
+    margin-top: 20px;
+}
+.byTagCanvas, .notTestedbyRootFolderCanvas{
     display: none;
+}
+.keyword{
+    color: #0077c6;
 }
