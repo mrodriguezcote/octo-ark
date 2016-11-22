@@ -4,8 +4,7 @@ nginx:
   ports:
     - 9000:80
   volumes:
-    - ./src/web:/usr/share/nginx/html
-
+    - ./src/pickles/web:/usr/share/nginx/html
 
 selenium:
   container_name: selenium-chrome
@@ -22,7 +21,7 @@ cucumber:
   links:
     - selenium
   volumes:
-    - /results
+    - ./src:/src
 
 pickles:
   container_name: pickles

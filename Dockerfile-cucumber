@@ -2,11 +2,8 @@ FROM node:6
 RUN echo "updating npm ...." && \
   curl -L https://npmjs.org/install.sh | sh
 
-COPY /src /src
-WORKDIR /src
+COPY /src/runner /tmp
+WORKDIR /tmp
 RUN npm install
 
-VOLUME /results
-RUN chmod 777 /results && chmod +t /results
-
-CMD rm -rf /results/.complete ; npm start
+CMD rm -rf /src/runner/.complete ; npm start
