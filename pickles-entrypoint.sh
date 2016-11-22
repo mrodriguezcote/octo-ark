@@ -2,7 +2,7 @@
 
 [ "$1" != "delayed-pickles" ] && exec $@
 
-echo "running mono pickles -- outputs to pickles:src/web"
+echo "running mono pickles -- outputs to pickles:/results/web"
 echo "waiting on results..."
 
 # sleeping here to ensure cucumber gets a chance to remove results file
@@ -14,4 +14,4 @@ done
 
 echo "RESULTS FOUND -- RUNNING MONO!"
 
-mono pickles/pickles.exe -f features -o web -lr /results/results.json -trfmt cucumberjson -df DHTML
+mono pickles/pickles.exe -f features -o /results/web -lr /results/results.json -trfmt cucumberjson -df DHTML

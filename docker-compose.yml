@@ -1,3 +1,12 @@
+nginx:
+  container_name: nginx
+  image: nginx
+  ports:
+    - 9000:80
+  volumes:
+    - ./src/web:/usr/share/nginx/html
+
+
 selenium:
   container_name: selenium-chrome
   image: selenium/standalone-chrome
@@ -22,4 +31,4 @@ pickles:
   ports:
     - 4000
   volumes_from:
-    - "cucumber"
+    - cucumber
