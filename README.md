@@ -7,16 +7,11 @@ Acceptance testing with cucumber and selenium
 
 ##### 1. Execute the tests
 
-`docker-compose up` Starts selenium, cucumber, and pickles containers
+`docker-compose up` Starts selenium, cucumber, pickles, and nginx containers
 
-##### 2. Retrieve the web files
+##### 2. See Results
 
-`docker cp pickles:src/web ./src` Puts the pickles site files on your host
-
-
-### results
-
-On a browser: file://*path-to-octo-ark*/src/web/Index.html
+On your browser: [http://localhost:9000/](http://localhost:9000/)
 
 ### cleanup
 
