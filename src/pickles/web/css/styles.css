@@ -292,4 +292,29 @@ h3.header {
     line-height: 32px;
 }
 
-
+/*Blue Acorn Theme*/
+.navbar-inverse .navbar-inner{
+    display: block;
+    background: #0077c6;
+    border-color: #0077c6;
+}
+.navbar-inverse .brand, .navbar-inverse .nav>li>a{
+    color: #FFFFFF;
+}
+.navbar-below{
+    width: 110px;
+    background: #0077c6;
+    color:#FFF;
+}
+    .navbar-below div:last-child{
+        display: none;
+    }
+#FolderNav{
+    margin-top: 20px;
+}
+.byTagCanvas, .notTestedbyRootFolderCanvas{
+    display: none;
+}
+.keyword{
+    color: #0077c6;
+}
