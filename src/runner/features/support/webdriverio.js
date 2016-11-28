@@ -3,7 +3,7 @@
 let WebDriverIO = require('webdriverio');
 let browser = WebDriverIO.remote({
   baseUrl: 'https://google.com',
-  host: 'selenium-chrome',
+  host: 'selenium',
   port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',

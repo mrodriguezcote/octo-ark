@@ -7,7 +7,7 @@ module.exports = function () {
 
   this.When(/^This step should also pass$/, function (done) {
     browser
-      .click('#js-pjax-container>div>div.col-9.float-left.pl-3>div.js-repo-filter.position-relative>div.mt-4>div.js-pinned-repos-reorder-container>ol>li:nth-child(2)>span>span>a>span')
+      .click('#js-pjax-container>div>div.col-9.float-left.pl-2>div.js-repo-filter.position-relative>div.mt-4>div.js-pinned-repos-reorder-container>ol>li:nth-child(2)>span>span>a>span')
       .call(done);
   });
 

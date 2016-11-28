@@ -234,7 +234,7 @@
                         <canvas id="overallCompleteCanvas"></canvas>
                     </div>
                     <aside id="overallCompleteSummary" class="pull-right">
-                        <h3>Summary by Scenario</h3>
+                        <h3>Scenario Summary by Result</h3>
                         <ul data-bind="foreach: totals">
                             <li>
                                 <span class="color-key" data-bind="text: value, style: { backgroundColor: color }"></span>
@@ -244,14 +244,14 @@
                     </aside>
                 </div>
                 <div>
-                    <h3 class="header">Summary by Feature</h3>
+                    <h3 class="header">Scenario Summary by Root Namespace</h3>
                     <canvas id="byRootFolderCanvas"></canvas>
                 </div>
-                <div class="byTagCanvas">
+                <div>
                     <h3 class="header">Scenario Summary by Top 20 Tags</h3>
                     <canvas id="byTagCanvas"></canvas>
                 </div>
-                <div class="notTestedbyRootFolderCanvas">
+                <div>
                     <h3 class="header">@NotTested Scenario Summary by Root Namespace</h3>
                     <canvas id="notTestedbyRootFolderCanvas"></canvas>
                 </div>
