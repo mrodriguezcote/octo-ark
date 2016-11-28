@@ -302,9 +302,11 @@ h3.header {
     color: #FFFFFF;
 }
 .navbar-below{
-    width: 70px;
+    width: 110px;
+    background: #0077c6;
+    color:#FFF;
 }
-    .navbar-below div:first-child{
+    .navbar-below div:last-child{
         display: none;
     }
 #FolderNav{
