@@ -3,8 +3,8 @@ nginx:
   image: nginx
   ports:
     - 9000:80
-  volumes:
-    - ./src/pickles/web:/usr/share/nginx/html
+  volumes_from:
+    - cucumber
 
 selenium:
   container_name: selenium
@@ -21,7 +21,7 @@ cucumber:
   links:
     - selenium
   volumes:
-    - ./src:/src
+    - /shared
 
 pickles:
   container_name: pickles

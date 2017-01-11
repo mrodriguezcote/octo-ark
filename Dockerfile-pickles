@@ -11,9 +11,11 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-WORKDIR /src/pickles
+COPY /src /shared
+WORKDIR /shared/pickles
 
 COPY pickles-entrypoint.sh /entrypoint.sh
+CMD ["chmod +x /entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["delayed-pickles"]
