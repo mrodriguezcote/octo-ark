@@ -2,8 +2,8 @@ FROM node:6
 RUN echo "updating npm ...." && \
   curl -L https://npmjs.org/install.sh | sh
 
-COPY /src/runner /tmp
-WORKDIR /tmp
+COPY /src /shared
+WORKDIR /shared/runner
 RUN npm install
 
-CMD rm -rf /src/runner/.complete ; npm start
+CMD npm start ; node report.js

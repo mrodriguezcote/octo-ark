@@ -1,3 +1,4 @@
+@demo
 Feature: Example failing feature
   As a user of octo-ark
   I want to have access to the project repo
