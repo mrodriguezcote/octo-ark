@@ -1,9 +1,8 @@
 # app
 #####
-/src/runner/results.json
-/src/runner/node_modules
-/src/runner/npm-debug.log
-/src/pickles/web
+/src/results.json
+/src/node_modules
+/src/npm-debug.log
 
 # editors
 #########
