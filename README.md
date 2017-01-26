@@ -11,7 +11,7 @@ Acceptance testing with cucumber and selenium
 
 ##### 2. See Results
 
-`docker cp cucumber:/results/cucumber_report.html .` and open cucumber_report.html in any browser
+`docker cp cucumber:/tmp/cucumber_report.html .` and open cucumber_report.html in any browser
 
 ### cleanup
 
