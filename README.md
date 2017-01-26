@@ -7,11 +7,11 @@ Acceptance testing with cucumber and selenium
 
 ##### 1. Execute the tests
 
-`docker-compose up` Starts selenium, cucumber, pickles, and nginx containers
+`docker-compose up` Starts selenium and cucumber containers
 
 ##### 2. See Results
 
-On your browser: [http://localhost:9000/](http://localhost:9000/)
+`docker cp cucumber:/results/cucumber_report.html .` and open cucumber_report.html in any browser
 
 ### cleanup
 
