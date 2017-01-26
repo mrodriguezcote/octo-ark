@@ -11,7 +11,12 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cucumber.js --tags @demo --format json:results.json"
+    "start": "cucumber.js runner --require runner --tags @demo --format json:results.json",
+    "stop": "node runner/support/html_reporter.js"
+  },
+  "repository": {
+       "type": "git",
+       "url": "git+https://github.com/mrodriguezcote/octo-ark.git"
   },
   "author": "Marco Rodriguez @ Blue Acorn",
   "license": "MIT",
