@@ -13,4 +13,4 @@ cucumber:
   links:
     - selenium
   volumes:
-    - /shared
+    - /results
