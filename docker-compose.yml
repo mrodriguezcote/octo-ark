@@ -14,12 +14,3 @@ cucumber:
     - selenium
   volumes:
     - /shared
-
-pickles:
-  container_name: pickles
-  build: .
-  dockerfile: Dockerfile-pickles
-  ports:
-    - 4000
-  volumes_from:
-    - cucumber

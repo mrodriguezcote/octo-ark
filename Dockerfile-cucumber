@@ -6,4 +6,4 @@ COPY /src /shared
 WORKDIR /shared/runner
 RUN npm install
 
-CMD rm -rf /shared/runner/.complete ; npm start
+CMD npm start ; node report.js
