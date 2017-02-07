@@ -1,8 +1,8 @@
 # app
 #####
-/src/results.json
-/src/node_modules
-/src/npm-debug.log
+results.json
+node_modules
+npm-debug.log
 
 # editors
 #########

@@ -11,8 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cucumber.js runner --require runner --tags @demo --format json:results.json",
-    "stop": "node runner/support/html_reporter.js"
+    "start": "cucumber.js features --tags @demo --format json:results.json",
+    "stop": "node features/support/html_reporter.js"
   },
   "repository": {
        "type": "git",

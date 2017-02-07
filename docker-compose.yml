@@ -1,16 +1,9 @@
 selenium:
   container_name: selenium
   image: selenium/standalone-chrome
-  ports:
-    - 4444:4444
 
 cucumber:
   container_name: cucumber
   build: .
-  dockerfile: Dockerfile-cucumber
-  ports:
-    - 6000
   links:
     - selenium
-  volumes:
-    - /tmp
