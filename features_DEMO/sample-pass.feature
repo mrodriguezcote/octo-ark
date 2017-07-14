@@ -1,5 +1,5 @@
-@demo
-Feature: Example failing feature
+@test
+Feature: Example passing feature
   As a user of octo-ark
   I want to have access to the project repo
   So that I can read the documentation
@@ -7,4 +7,4 @@ Feature: Example failing feature
   Scenario: Reading documentation
     Given This step should pass
     When This step should also pass
-    Then This final step should fail
+    Then This final step should pass

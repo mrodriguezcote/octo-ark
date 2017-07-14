@@ -1,13 +1,7 @@
 var homePage = require('./page_objects/home.page');
-var productPage = require('./page_objects/product.page');
-var categoryPage = require('./page_objects/category.page');
-var accountPage = require('./page_objects/account.page');
 var registrationPage = require('./page_objects/registration.page');
-var miniCart = require('./page_objects/minicart.page');
 var header = require('./page_objects/header.page');
 var footer = require('./page_objects/footer.page');
-var cart = require('./page_objects/cart.page');
-var checkout = require('./page_objects/checkout.page');
 
 
 module.exports = function () {

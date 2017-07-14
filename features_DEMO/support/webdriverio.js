@@ -2,9 +2,8 @@
 
 let WebDriverIO = require('webdriverio');
 let browser = WebDriverIO.remote({
-  baseUrl: 'http://yeti.qa-2.blueacorn.net',
-  //host: 'selenium',
-  host: 'localhost',
+  baseUrl: 'https://github.com/mrodriguezcote',
+  host: 'selenium',
   port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',

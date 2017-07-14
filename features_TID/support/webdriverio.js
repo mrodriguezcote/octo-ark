@@ -2,7 +2,7 @@
 
 let WebDriverIO = require('webdriverio');
 let browser = WebDriverIO.remote({
-  baseUrl: 'http://yeti.qa-2.blueacorn.net',
+  baseUrl: 'http://staging.southerntide.com',
   //host: 'selenium',
   host: 'localhost',
   port: 4444,
