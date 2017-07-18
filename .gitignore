@@ -3,6 +3,7 @@
 results.json
 node_modules
 npm-debug.log
+cucumber_report.html
 
 # editors
 #########

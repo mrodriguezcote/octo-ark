@@ -2,40 +2,43 @@ var homePage = require('./page_objects/home.page');
 var productPage = require('./page_objects/product.page');
 var categoryPage = require('./page_objects/category.page');
 var accountPage = require('./page_objects/account.page');
+var registrationPage = require('./page_objects/registration.page');
 var miniCart = require('./page_objects/minicart.page');
 var header = require('./page_objects/header.page');
+var footer = require('./page_objects/footer.page');
 var cart = require('./page_objects/cart.page');
 var checkout = require('./page_objects/checkout.page');
 
 
 module.exports = function () {
 
-    this.Given(/^I am on the homepage$/, {timeout: 20 * 1000}, function(done) {
+    this.Given(/^I am on the homepage$/, {timeout: 25 * 1000}, function(done) {
         homePage.open()
         browser
-          //.waitForVisible(homePage.popup, 10000)
-          .refresh()
+          .waitForVisible(homePage.popup, 20000).then(function() {
+            homePage.closePopup()
+          })
           .call(done);
     });
 
     this.Given(/^I request the product page$/, function(done) {
-        productPage.open1508()
+        productPage.openSS117JAN5183()
         browser
           .waitForVisible(productPage.productTitle, 5000)
           .call(done);
     });
 
     this.Given(/^I request a category page$/, {timeout: 10 * 1000}, function(done) {
-        categoryPage.openMen()
+        categoryPage.openNewArrivals()
         browser
-          .waitForVisible(categoryPage.categoryTitle, 5000)
+          .waitForVisible(categoryPage.breadcrumbs, 5000)
           .call(done);
     });
 
     this.Given(/^I request a search results page$/, {timeout: 10 * 1000}, function(done) {
-        categoryPage.openSearchShorts()
+        categoryPage.openSearchShoes()
         browser
-          .waitForVisible(categoryPage.pageTitle, 5000)
+          .waitForVisible(categoryPage.breadcrumbs, 5000)
           .call(done);
     });
 
@@ -44,21 +47,9 @@ module.exports = function () {
         browser.call(done);
     });
 
-    this.Given(/^I click on a product link from the New Arrivals carousel$/, function(done) {
-        homePage.clickNewArival()
-        browser.call(done);
-    });
-
     this.Given(/^I click on a product link on the related products casousel$/, function(done) {
         productPage.clickRelated()
         browser.call(done);
-    });
-
-    this.Given(/^I engage quickview$/, function(done) {
-        categoryPage.clickQuickview()
-        browser
-          .waitForVisible(categoryPage.quickviewRelated, 5000)
-          .call(done);
     });
 
     this.Then(/^I should reach the product page with visible ATC$/, {timeout: 10 * 1000}, function(done) {

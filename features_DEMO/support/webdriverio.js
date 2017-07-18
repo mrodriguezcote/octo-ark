@@ -3,7 +3,8 @@
 let WebDriverIO = require('webdriverio');
 let browser = WebDriverIO.remote({
   baseUrl: 'https://github.com/mrodriguezcote',
-  host: 'selenium',
+  host: 'localhost',
+  //host: 'selenium',
   port: 4444,
   waitforTimeout: 120 * 1000,
   logLevel: 'silent',
